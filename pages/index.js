@@ -243,7 +243,7 @@ const commentLikeDisliked =  (givenIndex, commentIndex) => {
            <img src = "./assets/likeFill.png" height = "25px" width ="25px" onClick={() => {likeDislikeACard(index, true)}} />
           }
           
-           <span className = {styles.number}>{item.cardInfo.likes ? item.cardInfo.likes : 0}</span>
+           <span className = {styles.number}>{item.cardInfo ? item.cardInfo.likes : 0}</span>
            </div>
            <div>
         {
@@ -254,16 +254,13 @@ const commentLikeDisliked =  (givenIndex, commentIndex) => {
            :
            <img src = "./assets/dislikeFill.png" height = "25px" width ="25px" onClick={() => {likeDislikeACard(index, false)}} />
         }
-           <span className = {styles.number}>{item.cardInfo.dislikes ? item.cardInfo.dislikes : 0}</span>
+           <span className = {styles.number}>{item.cardInfo ? item.cardInfo.dislikes : 0}</span>
            </div>
           
          </div>
-         {
-          selectedCard == index ?
-         
-         <Chip label={item.selectedGang} color="primary" variant="outlined"/>
-         : null }
+      
          <div className ={ styles.compInfo}>
+         <Chip label={item.selectedGang} color="primary" variant="outlined"/>
           <div >
           About This Company
           </div>
