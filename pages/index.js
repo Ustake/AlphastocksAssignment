@@ -258,7 +258,11 @@ const commentLikeDisliked =  (givenIndex, commentIndex) => {
            </div>
           
          </div>
+         {
+          selectedCard == index ?
+         
          <Chip label={item.selectedGang} color="primary" variant="outlined"/>
+         : null }
          <div className ={ styles.compInfo}>
           <div >
           About This Company
@@ -303,8 +307,9 @@ const commentLikeDisliked =  (givenIndex, commentIndex) => {
          
            <div onClick = {() => commentLikeDisliked(index, commentindex)}>
            {
-           !commentItem.likes ? <img src = "./assets/heart.png" width="25px" height = "25px"/> : <img src = "./assets/heart Fill.png"  width="25px" height = "25px"/>
-           }
+           commentItem ? !commentItem.likes ? <img src = "./assets/heart.png" width="25px" height = "25px"/> : <img src = "./assets/heart Fill.png"  width="25px" height = "25px"/>
+           
+           : null}
            </div>
          
          
