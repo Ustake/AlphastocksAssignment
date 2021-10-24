@@ -1,0 +1,29 @@
+{
+  "name": "alphastocks",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.1.1",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/material": "^5.0.4",
+    "axios": "^0.23.0",
+    "chart.js": "^3.5.1",
+    "emoji-picker-react": "^3.4.8",
+    "next": "11.1.2",
+    "performance-now": "^2.1.0",
+    "react": "17.0.2",
+    "react-charts": "^2.0.0-beta.7",
+    "react-dom": "17.0.2",
+    "react-emoji": "^0.5.0",
+    "recharts": "^2.1.5",
+    "sass": "^1.43.2",
+    "styled-components": "^5.3.3"
+  }
+}

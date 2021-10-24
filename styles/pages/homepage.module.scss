@@ -1,0 +1,204 @@
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+.cardContainer {
+    display: flex;
+   flex-direction: column;
+
+
+.cardParent {
+ 
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.8s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+
+    .submitContainer {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        span {
+            background-color: #4169e1;
+            width: 100px;
+            height: 30px;
+            color: wheat;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           cursor: pointer;
+           border-radius: 5%;
+        }
+    }
+
+    .compInfo {
+        display: none;
+    }
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        height: 100%;
+        .compInfo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+            flex-direction: column;
+            .compInfoText {
+                font-weight: 550;
+                font-size: 14px;
+                padding-top: 15px;
+            }
+        }
+    }
+    font-weight: 600;
+    .john {
+    font-size: 15px;
+    font-weight: 600;
+    }
+    .time {
+    font-size: 12px;
+    }
+
+    .innerCard {
+        padding: 20px;
+    }
+   
+    .compName {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .buyTarget {
+            padding-right: 20px;
+            font-size: 13px;
+          
+            .buy {
+                display: flex;
+                justify-content: flex-end;
+            }
+            .target {
+              display: flex;
+              justify-content: flex-end;
+            }
+
+            span {
+                color: green;
+                padding-left: 7px;
+            }
+        }
+    }
+
+    .whyTicker {
+        font-weight: 550;
+        font-size: 14px;
+        padding-top: 20px;
+    }
+    .likeDislike {
+        padding-top: 20px;
+        padding-bottom: 8px;
+        width: 120px;
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         .number {
+             padding-left: 15px;
+             margin-bottom: 10px;
+             position: absolute;
+             top: 50%;
+         }
+    }
+
+  
+}
+
+.selected {
+    height: 100%;
+    width: 600px;
+   // position: absolute;
+    z-index: 10000;
+    &:hover {
+        .compInfo {
+            display: none;
+        }
+    }
+    
+
+    .commentform {
+        display: flex;
+    }
+    .emoPicker {
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+} 
+}
+
+   
+
+}
+
+}
+
+
+
+.formContainer {
+
+    
+.createCardForm {
+    position: absolute;
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+    background-color: grey;
+    animation: dotPulse 0.5s  linear;
+     width: 800px;
+     height: 600px;
+    color: white;
+}
+
+
+
+
+}
+
+
+.addIcon {
+    position: absolute;
+    bottom: 6rem;
+    right: 6rem;
+    cursor: pointer;
+}
+
+
+@keyframes dotPulse {
+    0% {
+      height: 0px;
+      width: 0px;
+    }
+    30% {
+        height: 300px;
+        width: 400px;
+    }
+    60%,
+    100% {
+        height: 600px;
+        width: 800px;
+    }
+  }

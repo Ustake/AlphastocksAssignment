@@ -1,0 +1,44 @@
+
+.formContainer {
+  
+    max-width: 500px;
+    height: 100%;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.8s cubic-bezier(.25,.8,.25,1);
+    display: flex;
+    justify-content: center;
+    .buySell {
+        position: absolute;
+        right: 50px;
+        color: white;
+        .buy {
+            background-color: red;
+        } 
+        .sell {
+            background-color: greenyellow;
+        }
+    }
+    .tickerCurrentPrice {
+        min-width: 200px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    .submitContainer {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        span {
+            background-color: #4169e1;
+            width: 100px;
+            height: 30px;
+            color: wheat;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           cursor: pointer;
+           border-radius: 5%;
+        }
+    }
+}
